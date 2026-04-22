@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth Nagariya - AI/Python Engineer</title>
+    <meta name="description"
+        content="Portfolio of Parth Nagariya, an AI/Python Engineer specializing in LangChain RAG, CNN models, and Odoo systems.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- Constellation Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">parth.eng</a>
+            <div class="nav-links" id="nav-links">
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#about">About</a>
+                <a href="#contact" class="nav-cta">Contact</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">Available for opportunities</div>
+            <h1 class="hero-name">Parth<br><span class="stroke-text">Nagariya</span></h1>
+            <div class="hero-typed"><span id="typed-text"></span></div>
+            <p class="hero-desc">Building intelligent systems with RAG pipelines, CNN models, AI dashboards, and 100+
+                Odoo enterprise modules.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#contact" class="btn-outline">Get in Touch</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-num" data-target="100">0</span><span
+                        class="stat-suffix">+</span><span class="stat-label">Odoo Modules</span></div>
+                <div class="stat"><span class="stat-num" data-target="2125">0</span><span
+                        class="stat-suffix">+</span><span class="stat-label">Project Hours</span></div>
+                <div class="stat"><span class="stat-num" data-target="10">0</span><span
+                        class="stat-suffix">+</span><span class="stat-label">AI Projects</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 01 // Experience -->
+    <section id="experience">
+        <div class="container">
+            <span class="label sa">01 // Experience</span>
+            <h2 class="heading sa">Where I am working.</h2>
+            <div class="exp-card sa">
+                <div class="exp-top">
+                    <div>
+                        <h3>Odoo / AI Engineer</h3>
+                        <span class="exp-company">Softhealer Technologies, Westgate 2, Rajkot</span>
+                        <div class="exp-stats-mini">
+                            <span class="stat-tag"><i data-lucide="clock" class="icon-sm"></i> <span
+                                    class="counter-small" data-target="2125">0</span><span
+                                    class="stat-suffix-small">+</span> Hours</span>
+                        </div>
+                    </div>
+                    <div style="text-align: right;">
+                        <span class="exp-badge">Current</span>
+                        <div id="exp-timer" class="exp-timer-text">Loading experience...</div>
+                    </div>
+                </div>
+                <ul class="exp-list">
+                    <li>AI Dashboard Builder that generates charts and auto summaries from natural language input</li>
+                    <li>AI Chat Analyst with NLP to ORM/SQL query translation for enterprise databases</li>
+                    <li><strong>Autoblog Post Generator:</strong> Built a custom module in Softhealer's PMS for
+                        automatic blog posts with AI-driven SEO and GEO optimization. Reduced manual effort for
+                        SEO/Design teams by <span class="shimmer-text">~<span class="counter-small"
+                                data-target="20">0</span> hours</span> weekly.</li>
+                    <li>100+ Odoo modules shipped for versions 16, 17, 18, and 19</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 02 // Projects -->
+    <section id="projects">
+        <div class="container">
+            <span class="label sa">02 // Projects</span>
+            <h2 class="heading sa">Things I've built.</h2>
+
+            <h3 class="proj-section-title sa">Recent Projects (Odoo Apps Store)</h3>
+            <div class="projects-list">
+                <a href="https://apps.odoo.com/apps/modules/19.0/sh_ai_assistance" target="_blank"
+                    class="project-row sa">
+                    <span class="proj-num">01</span>
+                    <div class="proj-info">
+                        <h3>InsightMate: AI Insight Assistant</h3>
+                        <p>Talk to your data using natural language. Get instant charts, tables, dashboards, and
+                            insights powered by multi provider AI integration with OpenAI and Gemini.</p>
+                    </div>
+                    <span class="proj-arrow"><i data-lucide="external-link"></i></span>
+                </a>
+                <a href="https://apps.odoo.com/apps/modules/19.0/sh_ai_cv_analyzer" target="_blank"
+                    class="project-row sa">
+                    <span class="proj-num">02</span>
+                    <div class="proj-info">
+                        <h3>InsightMate: AI Recruitment Assistant</h3>
+                        <p>AI powered resume analysis and candidate matching for smarter hiring. Extracts skills,
+                            experience, and summaries from CVs and compares them against job requirements.</p>
+                    </div>
+                    <span class="proj-arrow"><i data-lucide="external-link"></i></span>
+                </a>
+                <a href="https://apps.odoo.com/apps/modules/19.0/sh_ai_livechat" target="_blank" class="project-row sa">
+                    <span class="proj-num">03</span>
+                    <div class="proj-info">
+                        <h3>InsightMate: AI Live Chatbot</h3>
+                        <p>Real time intelligent support chatbot for Odoo. Provides automated customer assistance using
+                            AI, integrated directly into Odoo's live chat system.</p>
+                    </div>
+                    <span class="proj-arrow"><i data-lucide="external-link"></i></span>
+                </a>
+                <a href="https://apps.odoo.com/apps/modules/19.0/sh_ai_mcp" target="_blank" class="project-row sa">
+                    <span class="proj-num">04</span>
+                    <div class="proj-info">
+                        <h3>InsightMate: MCP Server</h3>
+                        <p>Connect, control, and automate Odoo via MCP protocol. Secure token based and OAuth 2.1
+                            connections with model level permissions and field level restrictions.</p>
+                    </div>
+                    <span class="proj-arrow"><i data-lucide="external-link"></i></span>
+                </a>
+                <a href="https://apps.odoo.com/apps/modules/19.0/sh_ai_base" target="_blank" class="project-row sa">
+                    <span class="proj-num">05</span>
+                    <div class="proj-info">
+                        <h3>AI Base Module</h3>
+                        <p>Core foundation module for all InsightMate AI applications. Provides shared AI provider
+                            configuration, LLM setup, and base infrastructure for the entire AI suite.</p>
+                    </div>
+                    <span class="proj-arrow"><i data-lucide="external-link"></i></span>
+                </a>
+            </div>
+
+            <h3 class="proj-section-title sa">Personal Learning &amp; R&amp;D</h3>
+            <div class="projects-list">
+                <a href="https://github.com/Pn727r/projects_learning/tree/main/DATA%20SCIENCE" target="_blank"
+                    class="project-row sa">
+                    <span class="proj-num">06</span>
+                    <div class="proj-info">
+                        <h3>Data Science Learning Projects</h3>
+                        <p>A collection of various Data Science projects including model training and benchmarking.</p>
+                    </div>
+                    <span class="proj-arrow"><i data-lucide="external-link"></i></span>
+                </a>
+                <a href="https://github.com/Pn727r/projects_learning/tree/main/DATA_ANALYSIS_PROJECT" target="_blank"
+                    class="project-row sa">
+                    <span class="proj-num">07</span>
+                    <div class="proj-info">
+                        <h3>Data Analysis Projects</h3>
+                        <p>Exploratory Data Analysis (EDA) on various datasets with visualization and insights.</p>
+                    </div>
+                    <span class="proj-arrow"><i data-lucide="external-link"></i></span>
+                </a>
+                <div class="project-row sa">
+                    <span class="proj-num">08</span>
+                    <div class="proj-info">
+                        <h3><a href="https://github.com/Pn727r/fruit-object-detection" target="_blank"
+                                style="color: #fff; text-decoration: none;">Fruit Object Detection <i
+                                    data-lucide="external-link" class="icon-inline"></i></a></h3>
+                        <p>Real-time detection and classification of fruits using deep learning.</p>
+                        <details class="video-dropdown" onclick="event.stopPropagation();">
+                            <summary>View Output Video</summary>
+                            <div class="video-container">
+                                <video width="100%" controls preload="metadata">
+                                    <source src="v1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <a href="https://colab.research.google.com/drive/1bcSiJsoxUEmetvzjgUug4_Vaopjfbub_" target="_blank"
+                    class="project-row sa">
+                    <span class="proj-num">09</span>
+                    <div class="proj-info">
+                        <h3>Car Classification <i data-lucide="external-link" class="icon-inline"></i></h3>
+                        <p>Deep learning model trained on <strong>5,000+</strong> balanced scrapped images of various
+                            car models.</p>
+                    </div>
+                    <span class="proj-arrow"><i data-lucide="external-link"></i></span>
+                </a>
+            </div>
+
+            <h3 class="proj-section-title sa">College Projects</h3>
+            <div class="projects-list">
+                <a href="https://github.com/Pn727r/plant_selling.git" target="_blank" class="project-row sa">
+                    <span class="proj-num">10</span>
+                    <div class="proj-info">
+                        <h3>Plant Selling - College Final Project</h3>
+                        <p>Full-stack web application for botanical sales and inventory management.</p>
+                    </div>
+                    <span class="proj-arrow"><i data-lucide="external-link"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 03 // Skills -->
+    <section id="skills">
+        <div class="container">
+            <span class="label sa">03 // Skills</span>
+            <h2 class="heading sa">Tools of the trade.</h2>
+            <div class="skills-grid">
+                <div class="skill-card sa">
+                    <h3>AI &amp; Machine Intelligence</h3>
+                    <div class="tags">
+                        <span>RAG Pipelines</span><span>LangChain</span><span>LLMs</span><span>AI
+                            Agents</span><span>Prompt
+                            Engineering</span><span>Fast Learning</span>
+                    </div>
+                </div>
+                <div class="skill-card sa">
+                    <h3>Core Systems &amp; Software</h3>
+                    <div class="tags">
+                        <span>Python</span><span>DSA</span><span>API Development</span><span>Systems
+                            Design</span><span>OAuth 2.1</span><span>React</span><span>Material UI</span>
+                    </div>
+                </div>
+                <div class="skill-card sa">
+                    <h3>Enterprise &amp; Odoo ERP</h3>
+                    <div class="tags">
+                        <span>Odoo 16/17/18/19</span><span>ORM Architecture</span><span>PMS
+                            Development</span><span>Access Control</span><span>Module Design</span><span>CRUD
+                            APIs</span>
+                    </div>
+                </div>
+                <div class="skill-card sa">
+                    <h3>Data Engineering &amp; Platform</h3>
+                    <div class="tags">
+                        <span>SQL/NoSQL</span><span>Pinecone</span><span>Qdrant</span><span>Pandas/Numpy</span><span>Transformers</span><span>Streamlit</span><span>OpenAI/Gemini
+                            API</span>
+                    </div>
+                </div>
+                <div class="skill-card sa">
+                    <h3>Core Strengths</h3>
+                    <div class="tags">
+                        <span>Fast Learner: Have ability to learn fast and implement it</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 04 // Achievements -->
+    <section id="achievements">
+        <div class="container">
+            <span class="label sa">04 // Achievements</span>
+            <h2 class="heading sa">Certifications &amp; Awards.</h2>
+            <div class="projects-list">
+                <div class="project-row sa">
+                    <span class="proj-num">01</span>
+                    <div class="proj-info">
+                        <h3>Academic Excellence Award</h3>
+                        <p>Secured University 1st Rank consistently throughout B.Tech IT at RK University.</p>
+                    </div>
+                </div>
+                <div class="project-row sa">
+                    <span class="proj-num">02</span>
+                    <div class="proj-info">
+                        <h3>Exceptional Performance Award (MNC Techathon)</h3>
+                        <p>36-Hour continuous Techathon 2023 held by Gateway Group at Ahmedabad. Developed an AI-based
+                            Employee Attendance &amp; Reporting system using LLMs.</p>
+                    </div>
+                </div>
+                <div class="project-row sa">
+                    <span class="proj-num">03</span>
+                    <div class="proj-info">
+                        <h3>Semi-Finalist: Azadi ka Amrit Mahotsav Hackathon</h3>
+                        <p>36-Hour Student Start-up and Innovation Policy (SSIP) Hackathon 2022. Qualified for
+                            Semi-Finals with "Appointment System for Government ID Card".</p>
+                    </div>
+                </div>
+                <div class="project-row sa">
+                    <span class="proj-num">04</span>
+                    <div class="proj-info">
+                        <h3>Prompt Engineering Certification</h3>
+                        <p>Learn to communicate better with Artificial Intelligence by Indo Universal Collaboration for
+                            Engineering Education (IUCEE) - 2023.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 05 // About -->
+    <section id="about">
+        <div class="container">
+            <span class="label sa">05 // About</span>
+            <h2 class="heading sa">An engineer who thinks<br>in systems.</h2>
+            <div class="about-grid">
+                <div class="about-text sa">
+                    <p>I'm Parth, an AI Systems Engineer specializing in bridging the gap between AI and
+                        production-scale enterprise software.</p>
+                    <p>My expertise lies in designing robust RAG pipelines, deploying high-accuracy AI integrated
+                        softwares, and integrating intelligent NLP interfaces into complex ERP environments.</p>
+                    <p>At Softhealer Technologies, I lead the development of AI-driven tools and automation modules,
+                        delivering scalable solutions for diverse global clients.</p>
+                </div>
+                <div class="info-card sa">
+                    <div class="info-row"><span>Education</span><span>B.Tech IT, RK University (<strong>9.3
+                                CGPA</strong> / <strong>All time #1 Ranker</strong>)</span></div>
+                    <div class="info-row"><span>Focus</span><span>Build AI Systems</span></div>
+                    <div class="info-row"><span>Location</span><span>Rajkot, India</span></div>
+                    <div class="info-row"><span>Role</span><span>AI Systems Engineer</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 06 // Contact -->
+    <section id="contact">
+        <div class="container">
+            <span class="label sa">06 // Contact</span>
+            <h2 class="heading sa">Let's work together.</h2>
+            <div class="contact-grid">
+                <a href="mailto:parthnagariya123@gmail.com" class="contact-card sa" id="email-card">
+                    <div class="copy-feedback" id="copy-status">Email Copied!</div>
+                    <span class="contact-label">Email Me</span>
+                    <span class="contact-val" style="color: var(--purple);">parthnagariya123@gmail.com</span>
+                    <span style="font-size: 10px; margin-top: 8px; color: var(--text-muted); opacity: 0.8;">Click to
+                        copy &amp; send &#8594;</span>
+                </a>
+                <a href="tel:+917016926267" class="contact-card sa">
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-val">+91 70169 26267</span>
+                </a>
+                <a href="https://linkedin.com/in/parthnagariya-6ab34a234" target="_blank" class="contact-card sa">
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-val">parthnagariya</span>
+                </a>
+                <div class="contact-card sa">
+                    <span class="contact-label">Location</span>
+                    <span class="contact-val">Rajkot, Gujarat</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALL JS INLINED -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            /* ========== CANVAS CONSTELLATION BACKGROUND (desktop only) ========== */
+            if (window.innerWidth > 768) {
+                (function () {
+                    var canvas = document.getElementById('bg-canvas');
+                    var ctx = canvas.getContext('2d');
+                    var w, h;
+                    var mouseX = -9999, mouseY = -9999;
+
+                    function resize() {
+                        w = canvas.width = window.innerWidth;
+                        h = canvas.height = window.innerHeight;
+                    }
+                    resize();
+                    window.addEventListener('resize', resize);
+
+                    document.addEventListener('mousemove', function (e) {
+                        mouseX = e.clientX;
+                        mouseY = e.clientY;
+                    });
+                    document.addEventListener('mouseleave', function () {
+                        mouseX = -9999;
+                        mouseY = -9999;
+                    });
+
+                    var PARTICLE_COUNT = 80;
+                    var CONNECTION_DIST = 150;
+                    var MOUSE_RADIUS = 120;
+                    var particles = [];
+
+                    for (var i = 0; i < PARTICLE_COUNT; i++) {
+                        particles.push({
+                            x: Math.random() * window.innerWidth,
+                            y: Math.random() * window.innerHeight,
+                            vx: (Math.random() - 0.5) * 0.6,
+                            vy: (Math.random() - 0.5) * 0.6,
+                            radius: Math.random() * 1 + 0.5
+                        });
+                    }
+
+                    function animate() {
+                        requestAnimationFrame(animate);
+                        ctx.clearRect(0, 0, w, h);
+
+                        for (var i = 0; i < particles.length; i++) {
+                            var p = particles[i];
+
+                            var dx = p.x - mouseX;
+                            var dy = p.y - mouseY;
+                            var dist = Math.sqrt(dx * dx + dy * dy);
+                            if (dist < MOUSE_RADIUS && dist > 0) {
+                                var force = (MOUSE_RADIUS - dist) / MOUSE_RADIUS * 2;
+                                p.x += (dx / dist) * force;
+                                p.y += (dy / dist) * force;
+                            }
+
+                            p.x += p.vx;
+                            p.y += p.vy;
+
+                            if (p.x < -10) p.x = w + 10;
+                            if (p.x > w + 10) p.x = -10;
+                            if (p.y < -10) p.y = h + 10;
+                            if (p.y > h + 10) p.y = -10;
+
+                            var grad = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.radius * 3);
+                            grad.addColorStop(0, 'rgba(139, 92, 246, 0.8)');
+                            grad.addColorStop(0.4, 'rgba(139, 92, 246, 0.3)');
+                            grad.addColorStop(1, 'rgba(139, 92, 246, 0)');
+                            ctx.beginPath();
+                            ctx.arc(p.x, p.y, p.radius * 3, 0, Math.PI * 2);
+                            ctx.fillStyle = grad;
+                            ctx.fill();
+
+                            ctx.beginPath();
+                            ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                            ctx.fillStyle = 'rgba(139, 92, 246, 0.9)';
+                            ctx.fill();
+                        }
+
+                        for (var i = 0; i < particles.length; i++) {
+                            for (var j = i + 1; j < particles.length; j++) {
+                                var a = particles[i];
+                                var b = particles[j];
+                                var dx = a.x - b.x;
+                                var dy = a.y - b.y;
+                                var dist = Math.sqrt(dx * dx + dy * dy);
+
+                                if (dist < CONNECTION_DIST) {
+                                    var alpha = (1 - dist / CONNECTION_DIST) * 0.2;
+                                    ctx.beginPath();
+                                    ctx.moveTo(a.x, a.y);
+                                    ctx.lineTo(b.x, b.y);
+                                    ctx.strokeStyle = 'rgba(139, 92, 246, ' + alpha + ')';
+                                    ctx.lineWidth = 0.6;
+                                    ctx.stroke();
+                                }
+                            }
+                        }
+                    }
+                    animate();
+                })();
+            }
+
+            /* ========== HERO ENTRANCE (GSAP) ========== */
+            gsap.from('.hero-badge', { opacity: 0, y: 20, duration: 0.6, delay: 0.2 });
+            gsap.from('.hero-name', { opacity: 0, y: 40, duration: 0.8, delay: 0.4 });
+            gsap.from('.hero-typed', { opacity: 0, duration: 0.6, delay: 0.8 });
+            gsap.from('.hero-desc', { opacity: 0, y: 20, duration: 0.6, delay: 1.0 });
+            gsap.from('.hero-btns', { opacity: 0, y: 20, duration: 0.6, delay: 1.2 });
+            gsap.from('.hero-stats .stat', { opacity: 0, y: 20, duration: 0.5, stagger: 0.15, delay: 1.4 });
+
+            /* ========== SCROLL REVEAL (IntersectionObserver) ========== */
+            var saElements = document.querySelectorAll('.sa');
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+            saElements.forEach(function (el, i) {
+                el.style.transitionDelay = (i % 6) * 0.08 + 's';
+                observer.observe(el);
+            });
+
+            /* ========== TYPED.JS ========== */
+            new Typed('#typed-text', {
+                strings: ['AI / Python Engineer', 'AI Agent', 'Systems Architect'],
+                typeSpeed: 60,
+                backSpeed: 35,
+                loop: true,
+                showCursor: true
+            });
+
+            /* ========== MOBILE MENU ========== */
+            var toggle = document.getElementById('nav-toggle');
+            var mobileNav = document.getElementById('mobile-nav');
+
+            toggle.addEventListener('click', function () {
+                toggle.classList.toggle('open');
+                mobileNav.classList.toggle('active');
+            });
+
+            mobileNav.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    toggle.classList.remove('open');
+                    mobileNav.classList.remove('active');
+                });
+            });
+
+            /* ========== EXPERIENCE TIMER & DYNAMIC HELPERS ========== */
+            function updateExperienceTimer() {
+                const startDate = new Date('2024-06-01');
+                const now = new Date();
+                let years = now.getFullYear() - startDate.getFullYear();
+                let months = now.getMonth() - startDate.getMonth();
+                if (months < 0) {
+                    years--;
+                    months += 12;
+                }
+                const timerEl = document.getElementById('exp-timer');
+                if (timerEl) {
+                    timerEl.innerHTML = `<span class="counter-small" data-target="${years}">0</span> Year${years !== 1 ? 's' : ''} <span class="counter-small" data-target="${months}">0</span> Month${months !== 1 ? 's' : ''}`;
+                }
+            }
+            updateExperienceTimer();
+
+            /* ========== NAV SCROLL EFFECT ========== */
+            var navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', function () {
+                var curr = window.scrollY;
+                if (curr > 50) {
+                    navbar.style.borderBottomColor = 'rgba(139,92,246,0.15)';
+                } else {
+                    navbar.style.borderBottomColor = 'rgba(255,255,255,0.08)';
+                }
+            });
+
+            /* ========== SCROLL-TRIGGERED COUNTER ANIMATION ========== */
+            function animateCounters() {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const counter = entry.target;
+                            const target = parseInt(counter.getAttribute('data-target'));
+                            const duration = 2000; // Fixed 2 seconds
+                            const stepTime = 20;
+                            const steps = duration / stepTime;
+                            const increment = target / steps;
+                            let current = 0;
+
+                            const timer = setInterval(() => {
+                                current += increment;
+                                if (current >= target) {
+                                    counter.textContent = target.toLocaleString();
+                                    clearInterval(timer);
+                                } else {
+                                    counter.textContent = Math.floor(current).toLocaleString();
+                                }
+                            }, stepTime);
+
+                            observer.unobserve(counter);
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                document.querySelectorAll('[data-target]').forEach(counter => observer.observe(counter));
+            }
+            animateCounters();
+
+            /* ========== EMAIL LOGIC (COPY + FALLBACK) ========== */
+            const emailCard = document.getElementById('email-card');
+            const copyStatus = document.getElementById('copy-status');
+            const emailAddr = "parthnagariya123@gmail.com";
+
+            if (emailCard) {
+                emailCard.addEventListener('click', function (e) {
+                    // Try to copy to clipboard
+                    navigator.clipboard.writeText(emailAddr).then(() => {
+                        copyStatus.classList.add('active');
+                        setTimeout(() => {
+                            copyStatus.classList.remove('active');
+                        }, 2000);
+                    });
+
+                    // Still try to open mailto
+                    console.log('Attempting mailto...');
+                });
+            }
+
+            /* ========== LUCIDE ICONS ========== */
+            lucide.createIcons();
+        });
+    </script>
+</body>
+
+</html>
